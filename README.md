@@ -21,9 +21,9 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 # 😎 100-day-frontend-challenge 🚀
 <p>Completed Projects List Below</p>
 
-| Sr. No | Date         | Project Name                              | Status      | Level        |
-|--------|--------------|-------------------------------------------|-------------|--------------|
-|        |              |                                           |             |              |
+| Sr. No | Date         | Project Name     | Status      | Level        |
+|--------|--------------|------------------|-------------|--------------|
+|      1 |20-03-25      |  Profile Card    | Completed   |   Easy       |
 
 
 ---
