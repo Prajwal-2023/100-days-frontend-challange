@@ -23,7 +23,8 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 
 | Sr. No | Date         | Project Name     | Status      | Level        |
 |--------|--------------|------------------|-------------|--------------|
-|      1 |20-03-25      |  Profile Card    | Completed   |   Easy       |
+|      1 |23-03-25      |  Profile Card    | Completed   |   Easy       |
+|      2 |24-03-25      |  Add to Bag      | Completed   |   Easy       |
 
 
 ---
