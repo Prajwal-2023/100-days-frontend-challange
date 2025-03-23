@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Poppins, sans-serif;
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
-  font-family: Poppins, sans-serif;
   background: rgb(240 239 191);
 }
 
@@ -80,7 +80,6 @@ main {
   height: 6rem;
   overflow: hidden;
   border-radius: 50%;
-  background: #ffffff00;
   position: absolute;
   z-index: 1000;
   top: 12%;
@@ -96,25 +95,38 @@ main {
 }
 
 .profile_info {
-  margin-top: 2rem;
+  margin-top: 13rem;
   width: 100%;
-  height: auto;
-  background: #1f1e1ebd;
   text-align: center;
+  padding: 2rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:1.2rem;
+  & div h2{
+    letter-spacing: 0.2rem;
+  }
+  & div h6{
+    color:#474747;
+  }
+  h6{
+    width:16rem;
+    color:#333;
+  }
 }
 
 .logo_div {
   width: 100%;
   height: 100%;
-  background: red;
   display: flex;
   align-items: center;
   justify-content: center;
+
   & div {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background: green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,6 +140,35 @@ main {
   }
 }
 
+.for_buttons{
+    width: 100%;
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    button{
+        padding:0.5rem 1rem;
+        width:8rem;
+        border:none;
+        outline:none;
+        cursor:pointer;
+        border-radius: 1.1rem;
+        font-size:0.9rem;
+    }
+    & button:nth-child(odd){
+        background-color: rgb(225 57 145);
+        color:white;
+        border-color: 1px solid black;
+    }
+    & button:nth-child(odd):hover{
+        background-color: rgb(202, 33, 120);
+        border: 1px solid rgb(202, 33, 120);
+    }
+    & button:nth-child(even){
+        background-color: white;
+        border: 1px solid #474747;
+    }
+}
 /* rgb(149 50 79);  page 1 */
 /* rgb(184 81 111);  page 2 */
 /* rgb(225 57 145);  page 3 */
