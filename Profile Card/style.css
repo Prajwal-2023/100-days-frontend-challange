@@ -1,113 +1,133 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    width:100%;
-    height:100%;
-    font-family:Poppins, sans-serif;
-    background:rgb(240 239 191);
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Poppins, sans-serif;
+  background: rgb(240 239 191);
 }
 
-main{
-    width:100vw;
-    height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    position:relative;
-
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-    
-.wraper{
-    width:20rem;
-    height:32rem;
-    overflow: hidden;
-    background:#ffffff;
-    position:relative;
-    border-radius:1.6rem;
-    filter: drop-shadow(0px 0px 15px #00000065);
+
+.wraper {
+  width: 20rem;
+  height: 32rem;
+  overflow: hidden;
+  background: #ffffff;
+  position: relative;
+  border-radius: 1.6rem;
+  filter: drop-shadow(0px 0px 15px #00000065);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#thirdSvg {
+  width: 30rem;
+  height: 24rem;
+  position: absolute;
+  top: 15%;
+  fill: rgb(149 50 79);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#secondSvg {
+  width: 30rem;
+  height: 26rem;
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  fill: rgb(184 81 111);
+  transform: translate(-50%, -50%);
+}
+
+#extraSvg {
+  width: 60rem;
+  height: 27rem;
+  position: absolute;
+  top: 12.5%;
+  left: 0%;
+  fill: rgb(243, 164, 187);
+  transform: translate(-50%, -50%) scaleX(-1);
+  z-index: -1;
+}
+
+#firstSvg {
+  width: 60rem;
+  height: 26rem;
+  position: absolute;
+  top: 12%;
+  fill: rgb(225 57 145);
+  left: 0%;
+  transform: translate(-50%, -50%) scaleX(-1);
+}
+
+.profile_div {
+  width: 6rem;
+  height: 6rem;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #ffffff00;
+  position: absolute;
+  z-index: 1000;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0px 0px 10px #27272798);
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.profile_info {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  background: #1f1e1ebd;
+  text-align: center;
+}
+
+.logo_div {
+  width: 100%;
+  height: 100%;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & div {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: green;
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-#thirdSvg{
-    width:30rem;
-    height:24rem;
-    position:absolute;
-    top:15%;
-    fill:rgb(149 50 79);
-    left:50%;
-    transform: translate(-50%,-50%);
-}
-
-    
-#secondSvg{
-    width:30rem;
-    height:26rem;
-    position:absolute;
-    top:17%;
-    left:50%;
-    fill:rgb(184 81 111);
-    transform: translate(-50%,-50%);
-}
-
-#extraSvg{
-    width:60rem;
-    height:27rem;
-    position:absolute;
-    top:12.5%;
-    left:0%;
-    fill:rgb(243, 164, 187);
-    transform: translate(-50%,-50%) scaleX(-1);
-    z-index: -1;
-}
-
-    
-#firstSvg{
-    width:60rem;
-    height:26rem;
-    position:absolute;
-    top:12%;
-    fill:rgb(225 57 145);
-    left:0%;
-    transform: translate(-50%,-50%)scaleX(-1);
-
-}
-
-.profile_div{
-    width:6rem;
-    height:6rem;
-    overflow: hidden;
-    border-radius: 50%;
-    background:#ffffff00;
-    position:absolute;
-    z-index: 1000;
-    top:12%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    filter: drop-shadow(0px 0px 10px #27272798);
-    
-    & img{
-        width:100%;
-        height: 100%;
-        object-fit: cover;
+    & img {
+      width: 1.5rem;
+      height: 1.5rem;
+      object-fit: cover;
+      border-radius: 50%;
     }
-
-
+  }
 }
 
-.profile_info{
-    margin-top: 2rem;
-    width:100%;
-    height:6rem;
-    background:#1f1e1ebd;
-    text-align: center;
-}
-
-  /* rgb(149 50 79);  page 1 */
-  /* rgb(184 81 111);  page 2 */
-  /* rgb(225 57 145);  page 3 */
+/* rgb(149 50 79);  page 1 */
+/* rgb(184 81 111);  page 2 */
+/* rgb(225 57 145);  page 3 */
