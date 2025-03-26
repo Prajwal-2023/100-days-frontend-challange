@@ -78,13 +78,13 @@ main {
   padding: 7px 0;
   div {
     width: 100%;
-    /* background:red; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
-    padding: 0.2rem 0;
+    padding: 0.2rem 0.4rem;
     position: relative;
+    cursor:pointer;
 
     div {
       width: 2rem;
@@ -111,6 +111,9 @@ main {
       right: 0;
     }
   }
+  & div:hover{
+    background:#997ff870;
+  }
 }
 .profile_section_setting {
   width: 100%;
@@ -129,8 +132,9 @@ main {
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
-    padding: 0.2rem 0;
+    padding: 0.2rem 0.4rem;
     position: relative;
+    cursor:pointer;
 
     div {
       width: 2rem;
@@ -156,6 +160,9 @@ main {
       position: absolute;
       right: 0;
     }
+  }
+  div:hover{
+    background:#997ff870;
   }
 }
 .profile_section_bottom {
