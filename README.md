@@ -25,6 +25,7 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 |--------|--------------|------------------|-------------|--------------|
 |      1 |23-03-25      |  Profile Card    | Completed   |   Easy       |
 |      2 |24-03-25      |  Add to Bag      | Completed   |   Easy       |
+|      3 |26-03-25      |  Mobile Navigation   | Completed   |   Easy       |
 
 
 ---
