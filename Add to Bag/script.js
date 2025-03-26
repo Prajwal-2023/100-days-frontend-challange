@@ -7,9 +7,7 @@ let prevCard = null;
 sizeButtons.forEach((card) => { 
     card.addEventListener('click', function() { 
         if(prevCard) {
-            console.log(prevCard);
             prevCard.classList.remove('activeCard');
-            console.log(prevCard);
         }
         this.classList.add('activeCard'); 
         prevCard = this;
