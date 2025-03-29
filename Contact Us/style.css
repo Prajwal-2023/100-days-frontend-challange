@@ -15,21 +15,22 @@ main {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
-  background: #333;
+  background: url(./STATIC/image.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 .left_div {
   padding: 5rem 3rem;
   display: grid;
-  color:white;
+  color: white;
   div p {
-    width: 50%;
+    width: 100%;
   }
 
   /* location_glower */
-
-  .location_glower{
-    width:25rem;
+  .location_glower {
+    width: 25rem;
     height: 5rem;
     background-color: #e90090;
     border-radius: 1rem;
@@ -38,19 +39,46 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    .glow h6{
-      font-weight:500;
+    text-align: center;
+    filter: drop-shadow(0px 0px 40px #e9009076);
+    & h6 {
+      font-weight: 500;
     }
   }
-  .location_glower::before{
+
+  .location_glower::before {
     content: "";
     border: 35px solid;
     border-color: #e90090 #0000 #0000 #0000;
     position: absolute;
-    top:100%;
-    left:50%;
+    top: 100%;
+    left: 50%;
     transform: translate(-50%);
+  }
+
+  /* Glowing dot */
+  .glowing_dot {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #e90090;
+    border-radius: 50%;
+    top:130%; 
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px 5px #e90090;
+    animation: glowEffect 1.5s infinite alternate ease-in-out;
+  }
+
+  @keyframes glowEffect {
+    0% {
+      box-shadow: 0 0 5px 3px rgba(233, 0, 144, 0.6);
+      opacity: 0.7;
+    }
+    100% {
+      box-shadow: 0 0 15px 8px rgba(233, 0, 144, 1);
+      opacity: 1;
+    }
   }
 }
 
@@ -84,8 +112,8 @@ form {
     padding: 0.6rem 1rem;
     border-radius: 0.5rem;
     outline: none;
-    border-color: rgb(0, 0, 0);
-    border-width: 0.1rem;
+    border-color: #4c4c4ca1;
+    border-width: 0.2px;
   }
   input::placeholder {
     color: #efa9f8;
@@ -125,7 +153,9 @@ form {
     resize: vertical;
     border-radius: 0.5rem;
     padding: 0.5rem 10px;
-    border: 1px solid #000000;
+    outline: none;
+    border-color: #4c4c4ca1;
+    border-width: 0.2px;
   }
   textarea::placeholder {
     color: #efa9f8;
