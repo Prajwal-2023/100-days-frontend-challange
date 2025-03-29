@@ -13,7 +13,7 @@ main {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   background: #333;
 }
@@ -33,6 +33,24 @@ main {
     height: 5rem;
     background-color: #e90090;
     border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .glow h6{
+      font-weight:500;
+    }
+  }
+  .location_glower::before{
+    content: "";
+    border: 35px solid;
+    border-color: #e90090 #0000 #0000 #0000;
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform: translate(-50%);
   }
 }
 
