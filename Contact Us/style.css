@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: Poppins, "sans-serif";
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 html,
 body {
@@ -19,32 +19,97 @@ main {
 }
 
 .left_div {
-  background: #e41010;
   padding: 5rem 3rem;
+  display: grid;
+  color:white;
+  div p {
+    width: 50%;
+  }
+
+  /* location_glower */
+
+  .location_glower{
+    width:25rem;
+    height: 5rem;
+    background-color: #e90090;
+    border-radius: 1rem;
+  }
 }
+
 .right_div {
-  background: #afd40a;
   padding: 5rem 3rem;
-  display:grid;
+  display: grid;
   place-items: center;
 }
 
- form{
-    height:100%;
-    width:20rem;
-    background-color: green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap:1rem;
-    border-radius: 1rem;
-    padding:0.4rem 1rem;
+form {
+  height: 100%;
+  width: 21rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
 
-    input[type="text"],
-    input[type="email"],
-    input[type="phone"]{
-      width:100%;
-      padding:0.4rem 1rem;
+  p {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="phone"] {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border-color: rgb(0, 0, 0);
+    border-width: 0.1rem;
+  }
+  input::placeholder {
+    color: #efa9f8;
+  }
+
+  div {
+    width: 100%;
+    label {
+      cursor: pointer;
     }
+    input[type="radio"] {
+      accent-color: #e100ff;
+      cursor: pointer;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    outline: none;
+    border: none;
+    background: #fc27aa;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #e90090;
+  }
+
+  /* text area */
+  textarea {
+    width: 100%;
+    max-height: 6rem;
+    min-height: 4rem;
+    resize: vertical;
+    border-radius: 0.5rem;
+    padding: 0.5rem 10px;
+    border: 1px solid #000000;
+  }
+  textarea::placeholder {
+    color: #efa9f8;
+  }
 }
