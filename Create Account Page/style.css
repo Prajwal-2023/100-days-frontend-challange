@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background: #333;
+}
+
+.main-container {
+  background-color: #ffffe3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 2rem;
+}
+
+/* form */
+form {
+  width: 40%;
+  height: 100%;
+  /* background: yellow; */
+  display: grid;
+  grid-template-rows: 10% 10% 10% 10% 10% 10%;
+  gap: 1rem;
+}
+
+.sec_0 {
+  /* background: green; */
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+  & h5 {
+    color: #646464;
+  }
+  & h1 {
+    font-weight: 900;
+  }
+}
+.sec_1 {
+  /* background: blue; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & .name_div {
+    width: 49%;
+    height: 100%;
+    background: #ede5f2;
+    padding: 0.7rem;
+    border-radius: 0.6rem;
+    position: relative;
+    & label {
+      position: absolute;
+      top: 0;
+      left: 2%;
+      font-size: 0.9rem;
+      font-weight: 800;
+      padding: 0rem 0.4rem;
+
+      & #name {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 1.7rem;
+        background: transparent;
+      }
+    }
+  }
+  /* surname */
+
+  & .surname_div {
+    width: 49%;
+    height: 100%;
+    background: #fff;
+    border-radius: 0.6rem;
+    position: relative;
+
+    & label {
+      position: absolute;
+      top: 0;
+      left: 2%;
+      font-size: 0.9rem;
+      font-weight: 800;
+      padding: 0rem 0.4rem;
+
+      & #surname {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+.sec_2 {
+  /* background: blueviolet; */
+  width: 100%;
+  height: 100%;
+
+  & .email_div {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 0.7rem;
+    border-radius: 0.6rem;
+    position: relative;
+    & label {
+      position: absolute;
+      top: 0;
+      left: 2%;
+      font-size: 0.9rem;
+      font-weight: 800;
+      padding: 0rem 0.4rem;
+
+      & #email {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+.sec_3 {
+  background: brown;
+  width: 100%;
+  height: 100%;
+
+  & .password_div {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 0.7rem;
+    border-radius: 0.6rem;
+    position: relative;
+    & label {
+      position: absolute;
+      top: 0;
+      left: 2%;
+      font-size: 0.9rem;
+      font-weight: 800;
+      padding: 0rem 0.4rem;
+
+      & #password {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+.sec_4 {
+  background: orange;
+  width: 100%;
+  height: 100%;
+}
+.sec_5 {
+  background: skyblue;
+  width: 100%;
+  height: 100%;
+}
