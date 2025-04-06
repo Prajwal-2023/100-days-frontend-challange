@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Poppins, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
+    text-wrap:nowrap;
 }
 
 html,
@@ -75,6 +76,8 @@ form {
         font-size: 1.2rem;
         font-weight: 800;
         background: transparent;
+        display: block;
+        display: block;
       }
     }
   }
@@ -100,6 +103,7 @@ form {
         font-size: 1.2rem;
         font-weight: 800;
         background: transparent;
+        display: block;
       }
     }
   }
@@ -130,6 +134,7 @@ form {
         font-size: 1.2rem;
         font-weight: 800;
         background: transparent;
+        display: block;
       }
     }
   }
@@ -160,6 +165,7 @@ form {
         font-size: 1.2rem;
         font-weight: 800;
         background: transparent;
+        display: block;
       }
     }
   }
