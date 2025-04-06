@@ -22,19 +22,19 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 
 <p>Completed Projects List Below</p>
 
-| Sr. No | Date     | Project Name      | Status    | Level |
-| ------ | -------- | ----------------- | --------- | ----- |
-| 1      | 23-03-25 | Profile Card      | Completed | Easy  |
-| 2      | 24-03-25 | Add to Bag        | Completed | Easy  |
-| 3      | 26-03-25 | Mobile Navigation | Completed | Easy  |
-| 4      | 27-03-25 | Contact Us        | Completed | Easy  |
-| 5      | 31-03-25 | Recepie App UI    | Completed | Easy  |
-| 6      | 6-03-25  | Carousel Working & UI    | Completed | Medium  |
-| 7      | 6-03-25  | Rotating Image Gallery    | Completed | Medium  |
-| 8      | 6-03-25  | Create Account Page | Completed | Medium  |
+| Sr. No | Date     | Project Name      | Status    | Level  | Project Link       |
+| ------ | -------- | ----------------- | --------- | ------ | ------------------ |
+| 1      | 23-03-25 | Profile Card      | Completed | Easy   | [Link](#)          |
+| 2      | 24-03-25 | Add to Bag        | Completed | Easy   | [Link](https://prajwal-2023.github.io/Add-to-bag/)          |
+| 3      | 26-03-25 | Mobile Navigation | Completed | Easy   | [Link](#)          |
+| 4      | 27-03-25 | Contact Us        | Completed | Easy   | [Link](#)          |
+| 5      | 31-03-25 | Recepie App UI    | Completed | Easy   | [Link](#)          |
+| 6      | 6-03-25  | Carousel Working & UI | Completed | Medium | [Link](#)          |
+| 7      | 6-03-25  | Rotating Image Gallery | Completed | Medium | [Link](#)          |
+| 8      | 6-03-25  | Create Account Page | Completed | Medium | [Link](#)          |
 
 ---
-
+https://prajwal-2023.github.io/Add-to-bag/
 ### 🛠️ **Technologies & Tools**
 
 - **Frontend Development:** HTML, CSS, JavaScript
