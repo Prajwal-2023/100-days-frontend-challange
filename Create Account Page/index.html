@@ -19,13 +19,13 @@
                 <div class="name_div">
                     <label for="name">
                         First Name
-                        <input id="name" type="text">
+                        <input id="name" type="text" autocomplete="off" required>
                     </label>
                 </div>
                 <div class="surname_div">
                     <label for="surname">
                         Last Name
-                        <input id="surname" type="text">
+                        <input id="surname" type="text" autocomplete="off" required>
                     </label>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 <div class="email_div">
                     <label for="email">
                         Email
-                        <input id="email" type="email">
+                        <input id="email" type="email" autocomplete="off" required>
                     </label>
                 </div>
             </div>
@@ -44,12 +44,16 @@
                 <div class="password_div">
                     <label for="password">
                         Password
-                        <input id="password" type="password">
+                        <input id="password" type="password" autocomplete="off" required>
                     </label>
                 </div>
             </div>
-            <div class="sec_4"></div>
-            <div class="sec_5"></div>
+            <div class="sec_4">
+                <p>Already have an account? <span>Sign In</span></p>
+            </div>
+            <div class="sec_5">
+                <button>Create account</button>
+            </div>
 
         </form>
     </div>

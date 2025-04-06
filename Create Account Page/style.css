@@ -14,7 +14,7 @@ body {
 }
 
 .main-container {
-  background-color: #ffffe3;
+  background-color: #f5f5f5;
   width: 100%;
   height: 100%;
   display: flex;
@@ -31,6 +31,7 @@ form {
   display: grid;
   grid-template-rows: 10% 10% 10% 10% 10% 10%;
   gap: 1rem;
+  place-content: center;
 }
 
 .sec_0 {
@@ -42,7 +43,7 @@ form {
     color: #646464;
   }
   & h1 {
-    font-weight: 900;
+    font-weight: bolder;
   }
 }
 .sec_1 {
@@ -56,24 +57,23 @@ form {
   & .name_div {
     width: 49%;
     height: 100%;
-    background: #ede5f2;
-    padding: 0.7rem;
+    background: #dee5f6;
     border-radius: 0.6rem;
     position: relative;
+    overflow: hidden;
+    padding: 0 0 0 10px;
     & label {
-      position: absolute;
-      top: 0;
-      left: 2%;
-      font-size: 0.9rem;
+      color: #646464;
+      font-size: 0.8rem;
       font-weight: 800;
-      padding: 0rem 0.4rem;
 
       & #name {
-        width: 100%;
-        height: 100%;
+        width: 98%;
+        height: 40%;
         border: none;
         outline: none;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
+        font-weight: 800;
         background: transparent;
       }
     }
@@ -83,24 +83,23 @@ form {
   & .surname_div {
     width: 49%;
     height: 100%;
-    background: #fff;
+    background: #dee5f6;
     border-radius: 0.6rem;
     position: relative;
-
+    padding: 0 0 0 10px;
     & label {
-      position: absolute;
-      top: 0;
-      left: 2%;
-      font-size: 0.9rem;
+      color: #646464;
+      font-size: 0.8rem;
       font-weight: 800;
-      padding: 0rem 0.4rem;
 
       & #surname {
-        width: 100%;
-        height: 100%;
+        width: 98%;
+        height: 40%;
         border: none;
         outline: none;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
+        font-weight: 800;
+        background: transparent;
       }
     }
   }
@@ -113,65 +112,99 @@ form {
   & .email_div {
     width: 100%;
     height: 100%;
-    background: #fff;
-    padding: 0.7rem;
+    background: #dee5f6;
     border-radius: 0.6rem;
     position: relative;
+    padding: 0 0 0 10px;
+
     & label {
-      position: absolute;
-      top: 0;
-      left: 2%;
-      font-size: 0.9rem;
+      color: #646464;
+      font-size: 0.8rem;
       font-weight: 800;
-      padding: 0rem 0.4rem;
 
       & #email {
-        width: 100%;
-        height: 100%;
+        width: 98%;
+        height: 40%;
         border: none;
         outline: none;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
+        font-weight: 800;
+        background: transparent;
       }
     }
   }
 }
 .sec_3 {
-  background: brown;
+  /* background: brown; */
   width: 100%;
   height: 100%;
 
   & .password_div {
     width: 100%;
     height: 100%;
-    background: #fff;
-    padding: 0.7rem;
+    background: #dee5f6;
     border-radius: 0.6rem;
     position: relative;
+    padding: 0 0 0 10px;
+
     & label {
-      position: absolute;
-      top: 0;
-      left: 2%;
-      font-size: 0.9rem;
+      color: #646464;
+      font-size: 0.8rem;
       font-weight: 800;
-      padding: 0rem 0.4rem;
 
       & #password {
-        width: 100%;
-        height: 100%;
+        width: 98%;
+        height: 40%;
         border: none;
         outline: none;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
+        font-weight: 800;
+        background: transparent;
       }
     }
   }
 }
 .sec_4 {
-  background: orange;
+  /* background: orange; */
   width: 100%;
   height: 100%;
+  & p {
+    color: #646464;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  & span {
+    color: #1e3fe3;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  & span:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #406afe;
+    transition: 0.4s ease;
+    cursor: pointer;
+  }
 }
 .sec_5 {
-  background: skyblue;
+  /* background: skyblue; */
   width: 100%;
   height: 100%;
+
+  & button {
+    background: #406afe;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 400;
+    border-radius: 1.8rem;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  & button:hover {
+    filter: brightness(1.5);
+  }
 }
