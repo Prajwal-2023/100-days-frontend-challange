@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Carousel</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <main>
         <div class="image_container_div">
             <button id="leftBtn">Left</button>
             <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
+                <img src="./STATIC/img1.jpg" alt="showing_pic">
             </div>
             <button id="rightBtn">Right</button>
         </div>
         <!-- Carousel Div -->
-         <div class="carousel_div">
+        <div class="carousel_div">
             <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
+                <img src="./STATIC/img2.jpg" alt="showing_pic">
             </div>
             <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
+                <img src="./STATIC/img3.jpg" alt="showing_pic">
             </div>
             <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
+                <img src="./STATIC/img4.jpg" alt="showing_pic">
             </div>
             <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
+                <img src="./STATIC/img6.jpg" alt="showing_pic">
             </div>
             <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
+                <img src="./STATIC/img7.jpg" alt="showing_pic">
             </div>
             <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
+                <img src="./STATIC/img8.jpg" alt="showing_pic">
             </div>
             <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
+                <img src="./STATIC/img9.webp" alt="showing_pic">
             </div>
             <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
+                <img src="./STATIC/img10.jpg" alt="showing_pic">
             </div>
             <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
+                <img src="./STATIC/img11.avif" alt="showing_pic">
             </div>
-            <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
-            </div>
-            <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
-            </div>
-            <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
-            </div>
-            <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
-            </div>
-            <div class="showing_image">
-                <img src="/Add to Bag/STATIC/image.png" alt="showing_pic">
-            </div>
-         </div>
+        </div>
+        <div class="dotContainer"></div>
     </main>
+    <!--  -->
+    <script>
+        const leftBtn = document.querySelector('#leftBtn');
+        const rightBtn = document.querySelector('#rightBtn');
+        const mainImage = document.querySelector('.image_container_div .showing_image img');
+        const carouselImagesList = document.querySelectorAll('.carousel_div .showing_image img');
+        const dotContainer =  document.querySelectorAll('.dotContainer');
+
+        let currentIndex = 6;
+        mainImage.src = carouselImagesList[currentIndex].src;
+
+        function updateIndex(index) {
+            mainImage.src = carouselImagesList[index].src;
+        }
+
+        leftBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + carouselImagesList.length) % carouselImagesList.length;
+            updateIndex(currentIndex);
+        })
+        rightBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % carouselImagesList.length;
+            updateIndex(currentIndex);
+        })
+    </script>
+    <!--  -->
 </body>
+
 </html>
