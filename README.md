@@ -29,6 +29,7 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 | 3      | 26-03-25 | Mobile Navigation | Completed | Easy  |
 | 4      | 27-03-25 | Contact Us        | Completed | Easy  |
 | 5      | 31-03-25 | Recepie App UI    | Completed | Easy  |
+| 6      | 6-03-25  | Carousel Working & UI    | Completed | Medium  |
 
 ---
 
