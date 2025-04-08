@@ -8,13 +8,19 @@ const subBtn = document.querySelector('button');
 inputElem.forEach((inputs) => {
 
     inputs.addEventListener('focus',(parentElem)=>{
-        console.log(parentElem.target.offsetParent);
-        parentElem.target.offsetParent.style.border = `1px solid red`;
+        const inputActiveBorder = parentElem.target.offsetParent;
+        const inputLabelColor = parentElem.target.nextSibling.parentElement;
+        // console.log(parentElem.target.nextSibling.parentElement);  - to get label
+        // console.log(parentElem.target.offsetParent); - to get Parent Div
+        inputActiveBorder.style.border = `1px solid red`;
+        inputLabelColor.style.color = `black`;
     })
 
     inputs.addEventListener('blur',(parentElem)=>{
-        console.log(parentElem.target.offsetParent);
-        parentElem.target.offsetParent.style.border = `none`;
+        const inputActiveBorder = parentElem.target.offsetParent;
+        const inputLabelColor = parentElem.target.nextSibling.parentElement;
+        inputActiveBorder.style.border = `none`;
+        inputLabelColor.style.color = `#646464`;
     })
 
 
