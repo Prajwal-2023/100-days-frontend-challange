@@ -51,7 +51,7 @@ cardObj.forEach((newCard) => {
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML =
-        `<div class="div_day_time">
+        `<div class="div_day_time" style="background:#${newCard.eventCardColor}">
                 <h5>${newCard.eventDay}</h5>
                 <h2>${newCard.eventTime}</h2>
         </div>
@@ -60,7 +60,7 @@ cardObj.forEach((newCard) => {
                 <h4>${newCard.eventDescription}</h4>
         </div>
         <div class="status_button_div ">
-                <button class="${!newCard.ticketStatus.available ? '.no_ticket' : ''}">
+                <button class="${newCard.ticketStatus.available === "false" ? 'no_ticket' : ''}">
                    ${newCard.ticketStatus.text}
                 </button
         </div>`
