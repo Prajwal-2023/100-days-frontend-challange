@@ -32,6 +32,7 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 | 6      | 6-03-25  | Carousel Working & UI | Completed | Medium | [Link](#)          |
 | 7      | 6-03-25  | Rotating Image Gallery | Completed | Medium | [Link](#)          |
 | 8      | 6-03-25  | Create Account Page | Completed | Medium | [Link](#)          |
+| 9      | 10-03-25  | Password Generator | 50% Done | Medium | [Link](#)          |
 
 ---
 https://prajwal-2023.github.io/Add-to-bag/
